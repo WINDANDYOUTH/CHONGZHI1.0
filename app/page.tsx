@@ -1,132 +1,164 @@
-import React from 'react';
+import {
+  bundles,
+  heroContent,
+  supportContent,
+  trustPillars,
+  workflow,
+} from "./content";
+import FloatingLines from "@/components/FloatingLines";
+
 
 export default function Home() {
   return (
-    <main className="container">
-      {/* 1. Above the Fold */}
-      <section className="hero">
-        <h1 className="floating">一站式 ChatGPT Plus 官方代充：安全、极速、微信支付宝</h1>
-        <p className="hero-sub">50000+ 用户信赖，轻松升级 GPT-4，即刻享受优先体验。</p>
-        <a href="#products" className="cta-btn primary">立即升级 Plus →</a>
-      </section>
-
-      {/* 2. Trust & Security */}
-      <section className="features-grid">
-        <div className="glass-card feature-item">
-          <div className="feature-icon">🔒</div>
-          <div>
-            <h3>绝不封号 账户安全</h3>
-            <p>正规渠道，独享账号</p>
-          </div>
-        </div>
-        <div className="glass-card feature-item">
-          <div className="feature-icon">⚡</div>
-          <div>
-            <h3>20 秒自动极速到账</h3>
-            <p>全天候自动发货</p>
-          </div>
-        </div>
-        <div className="glass-card feature-item">
-          <div className="feature-icon">✅</div>
-          <div>
-            <h3>50000+ 用户信赖</h3>
-            <p>口碑见证，值得信赖</p>
-          </div>
-        </div>
-        <div className="glass-card feature-item">
-          <div className="feature-icon">💰</div>
-          <div>
-            <h3>全网性价比之选</h3>
-            <p>价格透明，无隐形消费</p>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. Products & Pricing */}
-      <section id="products" className="products-list">
-        <h2>热门套餐</h2>
-
-        <div className="glass-card product-card">
-          <div className="product-header">
-            <h3>ChatGPT Plus (官方通道)</h3>
-            <span className="price">¥168</span>
-          </div>
-          <p>正规充值，稳定不掉</p>
-          <a href="#" className="cta-btn">立即升级 Plus →</a>
+    <div className="page">
+      <section className="hero-aurora">
+        <div className="hero-lines" aria-hidden>
+          <FloatingLines
+           enabledWaves={['top', 'middle', 'bottom']}
+           // Array - specify line count per wave; Number - same count for all waves
+           lineCount={[6, 6, 6]}
+           // Array - specify line distance per wave; Number - same distance for all waves
+           lineDistance={[5, 5, 5]}
+           bendRadius={5.0}
+           bendStrength={-0.5}
+           interactive={true}
+           parallax={true}
+          />
+          <div className="hero-fade" />
         </div>
 
-        <div className="glass-card product-card">
-          <div className="product-header">
-            <h3>ChatGPT Plus 新账号</h3>
-            <span className="price">¥158</span>
-          </div>
-          <p>含一个月会员，独享</p>
-          <a href="#" className="cta-btn">购买新号 →</a>
-        </div>
+        <div className="hero-shell">
+          <div className="hero-center">
+            <div className="pill pill-aurora">
+              <span className="pill-dot" />
+              {heroContent.badge}
+            </div>
+            <h1 className="hero-heading">
+              {heroContent.title}
+              <span>{heroContent.highlight}</span>
+            </h1>
+            <p className="hero-lede">{heroContent.description}</p>
+            <div className="hero-actions">
+              {heroContent.actions.map((action) => (
+                <a
+                  key={action.label}
+                  className={`hero-btn ${action.variant === "ghost" ? "ghost" : "primary"}`}
+                  href={action.href}
+                >
+                  {action.label}
+                </a>
+              ))}
+            </div>
 
-        <div className="glass-card product-card">
-          <div className="product-header">
-            <h3>Gemini 2.5 Pro 会员</h3>
-            <span className="price">¥140</span>
-          </div>
-          <p>谷歌最强模型体验</p>
-          <a href="#" className="cta-btn">立即购买 →</a>
-        </div>
-
-        <div className="glass-card product-card">
-          <div className="product-header">
-            <h3>Claude / Grok 会员</h3>
-            <span className="price">¥180</span>
-          </div>
-          <p>多模型支持，灵活选择</p>
-          <a href="#" className="cta-btn">立即购买 →</a>
-        </div>
-      </section>
-
-      {/* 4. Process */}
-      <section className="steps">
-        <h2>操作流程</h2>
-        <div className="step-item">
-          <div className="step-icon">1</div>
-          <div>
-            <h3>选择套餐</h3>
-            <p>选择您需要的会员服务</p>
-          </div>
-        </div>
-        <div className="step-item">
-          <div className="step-icon">2</div>
-          <div>
-            <h3>扫码支付</h3>
-            <p>支持微信/支付宝，安全快捷</p>
-          </div>
-        </div>
-        <div className="step-item">
-          <div className="step-icon">3</div>
-          <div>
-            <h3>自动激活</h3>
-            <p>支付成功后，系统自动充值/发货</p>
+            <div className="hero-stats">
+              {heroContent.stats.map((stat) => (
+                <div key={stat.label} className="hero-stat-card">
+                  <p className="stat-value">{stat.value}</p>
+                  <p className="stat-label">{stat.label}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 5. Footer */}
-      <footer className="footer glass-card">
-        <div className="payment-methods">
-          <div className="payment-icon">支</div>
-          <div className="payment-icon">微</div>
-        </div>
+      <div className="page-shell">
+        <div className="orb orb-a" aria-hidden />
+        <div className="orb orb-b" aria-hidden />
 
-        <div className="support-qr">
-          [二维码占位]
-        </div>
-        <p>扫码添加微信客服</p>
-        <p style={{ marginTop: '5px', fontWeight: 'bold' }}>微信号：vipgpt01</p>
+        <main className="page-content">
+          <section className="section-card">
+            <div className="section-head">
+              <div>
+                <p className="eyebrow">信赖之选</p>
+                <h2>像 ai.google 一样简洁的未来感</h2>
+              </div>
+              <p className="section-note">
+                透明、克制、极简的设计语言，突出核心信息，不打扰用户
+              </p>
+            </div>
+            <div className="feature-grid">
+              {trustPillars.map((feature) => (
+                <div key={feature.title} className="feature-card">
+                  <span className="chip subtle">{feature.accent}</span>
+                  <h3>{feature.title}</h3>
+                  <p>{feature.description}</p>
+                </div>
+              ))}
+            </div>
+          </section>
 
-        <div className="disclaimer">
-          <p>本服务仅提供代充/账号服务，与 OpenAI 官方无关。</p>
-          <p>© 2025 AI 会员代充服务</p>
-        </div>
-      </footer>
-    </main>
+          <section id="products" className="section-card">
+            <div className="section-head">
+              <div>
+                <p className="eyebrow">热门套餐</p>
+                <h2>主力模型，随时升级</h2>
+              </div>
+              <p className="section-note">
+                官方直连渠道，会员、接口、团队版本均可咨询定制
+              </p>
+            </div>
+            <div className="bundle-grid">
+              {bundles.map((bundle) => (
+                <div key={bundle.name} className="bundle-card">
+                  <div className="bundle-meta">
+                    <div>
+                      <p className="bundle-name">{bundle.name}</p>
+                      <p className="bundle-desc">{bundle.description}</p>
+                    </div>
+                    {bundle.badge && <span className="badge">{bundle.badge}</span>}
+                  </div>
+                  <p className="bundle-price">{bundle.price}</p>
+                  <ul className="perk-list">
+                    {bundle.perks.map((perk) => (
+                      <li key={perk}>{perk}</li>
+                    ))}
+                  </ul>
+                  <a className="cta slim" href="#support">
+                    立即咨询
+                  </a>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section id="workflow" className="section-card">
+            <div className="section-head">
+              <div>
+                <p className="eyebrow">操作流程</p>
+                <h2>三步完成，自动发货</h2>
+              </div>
+              <p className="section-note">
+                轻量级流程设计，让升级体验像 ai.google 一样顺滑
+              </p>
+            </div>
+            <div className="timeline">
+              {workflow.map((step, index) => (
+                <div key={step.title} className="timeline-row">
+                  <div className="timeline-index">{index + 1}</div>
+                  <div>
+                    <p className="item-title">{step.title}</p>
+                    <p className="item-desc">{step.detail}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section id="support" className="section-card support-card">
+            <div className="support-visual">{supportContent.qrPlaceholder}</div>
+            <div className="support-copy">
+              <p className="eyebrow">专属客服</p>
+              <h3>微信 / 支付宝 · 全天候响应</h3>
+              <p className="support-id">{supportContent.wechatId}</p>
+              <p className="support-note">{supportContent.note}</p>
+              <div className="support-footer">
+                <p>{supportContent.copyright}</p>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
   );
 }
