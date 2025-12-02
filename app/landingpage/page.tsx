@@ -3,6 +3,7 @@ import AdvantagesSection from "@/components/sections/AdvantagesSection";
 import PricingSection from "@/components/sections/PricingSection";
 import MobileStickyCTA from "@/components/cta/MobileStickyCTA";
 import UpgradeStepsSection from "@/components/sections/UpgradeStepsSection";
+import FAQSection from "@/components/sections/FAQSection";
 
 export default function HomePage() {
     return (
@@ -12,6 +13,7 @@ export default function HomePage() {
             <PricingSection />
             <MobileStickyCTA />
             <UpgradeStepsSection />
+            <FAQSection />
             {/* 后面可以继续接价格区块 / 流程区块等 */}
         </main>
     );

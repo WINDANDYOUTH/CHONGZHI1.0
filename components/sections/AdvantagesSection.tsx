@@ -9,7 +9,7 @@ const AdvantagesSection: FC = () => {
         {/* 标题区域 */}
         <div className="text-center">
           <p className="text-xs sm:text-sm uppercase tracking-[0.2em] text-emerald-300/80">
-            WHY CHOOSE US
+            选择我们的理由
           </p>
           <h2 className="mt-3 font-sans text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">
             极速充值 · 更优价格 · 一站式 AI 会员升级体验

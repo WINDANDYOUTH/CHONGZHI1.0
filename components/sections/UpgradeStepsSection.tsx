@@ -11,7 +11,7 @@ const UpgradeStepsSection: FC = () => {
                 {/* 标题区 */}
                 <div className="text-center">
                     <p className="text-xs sm:text-sm uppercase tracking-[0.2em] text-emerald-300/80">
-                        HOW IT WORKS
+                        工作原理
                     </p>
                     <h2 className="mt-3 font-sans text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">
                         三步完成会员升级，无需折腾外卡
@@ -143,7 +143,18 @@ const UpgradeStepsSection: FC = () => {
                         </p>
                     </div>
                 </div>
+
             )}
+
+            <div className="mx-auto max-w-5xl px-4 text-white">
+                {/* ... 上面是你的步骤卡片 / 时间线之类 ... */}
+
+                {/* ✅ 承接到 FAQ 的文案：加在这里 */}
+                <p className="mt-10 text-center text-sm text-white/70 sm:text-base">
+                    升级流程其实就这么简单。如果你对到账时间、支付方式或账号安全还有更多疑问，
+                    可以接着往下看我们的常见问题 FAQ。
+                </p>
+            </div>
         </section>
     );
 };

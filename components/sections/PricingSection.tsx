@@ -35,7 +35,7 @@ const PricingSection: FC = () => {
         {/* 标题区 */}
         <div className="text-center">
           <p className="text-xs sm:text-sm uppercase tracking-[0.2em] text-emerald-100/90">
-            PRICING
+            价格
           </p>
           <h2 className="mt-3 font-sans text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
             更优势的价格 · 更灵活的会员升级方案
@@ -48,11 +48,11 @@ const PricingSection: FC = () => {
 
         {/* 价格卡片区 */}
         <div className="grid gap-6 sm:gap-8 sm:grid-cols-3">
-          {/* 月付方案 */}
+          {/* 账户购买方案 */}
           <div className="flex flex-col rounded-3xl border border-white/25 bg-black/45 p-6 sm:p-7 backdrop-blur-xl shadow-[0_0_40px_rgba(0,0,0,0.6)]">
             <div className="mb-3 flex items-center justify-between">
               <h3 className="font-sans text-lg sm:text-xl font-semibold">
-                月付体验方案
+                账户购买方案
               </h3>
               <span className="rounded-full border border-white/25 px-2 py-0.5 text-[11px] text-white/80">
                 适合先体验
@@ -60,11 +60,11 @@ const PricingSection: FC = () => {
             </div>
 
             <p className="text-sm text-white/80">
-              想先体验 ChatGPT Plus 带来的效率提升？月付方案适合短期试用或阶段性使用。
+              想先体验 ChatGPT Plus 带来的效率提升？购买成品账户方案适合短期试用或阶段性使用。
             </p>
 
             <div className="mt-6 flex items-baseline gap-1">
-              <span className="text-2xl sm:text-3xl font-bold">¥XXX</span>
+              <span className="text-2xl sm:text-3xl font-bold">¥120</span>
               <span className="text-xs sm:text-sm text-white/70">/ 月</span>
             </div>
 
@@ -75,7 +75,7 @@ const PricingSection: FC = () => {
             </ul>
 
             <button className="mt-6 w-full rounded-full bg-white/15 py-2.5 text-sm font-semibold text-white hover:bg-white/25">
-              选这个方案
+              使用成品账户
             </button>
           </div>
 
@@ -99,7 +99,7 @@ const PricingSection: FC = () => {
             </p>
 
             <div className="mt-6 flex items-baseline gap-1">
-              <span className="text-2xl sm:text-3xl font-bold">¥XXX</span>
+              <span className="text-2xl sm:text-3xl font-bold">¥120</span>
               <span className="text-xs sm:text-sm text-white/70">/ 3 个月</span>
             </div>
             <p className="mt-1 text-xs text-emerald-200/90">
