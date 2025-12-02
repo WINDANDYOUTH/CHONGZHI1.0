@@ -16,9 +16,15 @@ export default function MobileStickyCTA() {
                             </p>
                         </div>
 
-                        <button className="shrink-0 rounded-full bg-emerald-400 px-4 py-2 text-xs font-semibold text-black shadow-md shadow-emerald-500/40 hover:bg-emerald-300">
-                            立即升级
-                        </button>
+                        <a
+                         href="https://fe.dtyuedan.cn/item/wu0l29"
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         className="shrink-0 rounded-full bg-emerald-400 px-4 py-2 text-xs font-semibold text-black shadow-md shadow-emerald-500/40 hover:bg-emerald-300 text-center"
+                        > 
+                         立即升级
+                        </a>
+
                     </div>
                 </div>
             </div>
