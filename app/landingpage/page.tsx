@@ -4,6 +4,7 @@ import PricingSection from "@/components/sections/PricingSection";
 import MobileStickyCTA from "@/components/cta/MobileStickyCTA";
 import UpgradeStepsSection from "@/components/sections/UpgradeStepsSection";
 import FAQSection from "@/components/sections/FAQSection";
+import SupportSection from "@/components/sections/SupportSection";
 
 export default function HomePage() {
     return (
@@ -14,6 +15,7 @@ export default function HomePage() {
             <MobileStickyCTA />
             <UpgradeStepsSection />
             <FAQSection />
+            <SupportSection />
             {/* 后面可以继续接价格区块 / 流程区块等 */}
         </main>
     );

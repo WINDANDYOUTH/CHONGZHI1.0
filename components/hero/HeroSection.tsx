@@ -69,12 +69,22 @@ export default function HeroSection() {
 
         {/* CTA 按钮（移动端加大 + 视觉强） */}
         <div className="mt-7 flex w-full max-w-sm flex-col items-stretch gap-3 sm:max-w-md sm:flex-row sm:gap-4">
-          <button className="w-full rounded-full bg-emerald-400 px-6 py-4 text-lg font-bold text-black shadow-lg shadow-emerald-400/40 transition hover:bg-emerald-300 sm:flex-1">
+        <a
+           href="https://fe.dtyuedan.cn/item/wu0l29"
+           target="_blank"
+           rel="noopener noreferrer"
+           className="w-full rounded-full bg-emerald-400 px-6 py-4 text-lg font-bold text-black shadow-lg shadow-emerald-400/40 transition hover:bg-emerald-300 sm:flex-1 text-center"
+           >
             立即升级会员
-          </button>
-          <button className="w-full rounded-full border border-white/40 bg-black/40 px-6 py-4 text-lg font-semibold text-white/85 backdrop-blur-sm transition hover:bg-white/10 hover:border-white/50 sm:flex-1">
-            查看套餐与价格
-          </button>
+        </a>
+        <a
+           href="https://fe.dtyuedan.cn/shop/2VDGQW4N/h4htfv"
+           target="_blank"
+           rel="noopener noreferrer"
+           className="w-full rounded-full border border-white/40 bg-black/40 px-6 py-4 text-lg font-semibold text-white/85 backdrop-blur-sm transition hover:bg-white/10 hover:border-white/50 sm:flex-1 text-center"
+           >
+            购买成品 AI 账户
+        </a>
         </div>
 
         {/* 下滑提示 */}

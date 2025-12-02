@@ -64,8 +64,8 @@ const PricingSection: FC = () => {
             </p>
 
             <div className="mt-6 flex items-baseline gap-1">
-              <span className="text-2xl sm:text-3xl font-bold">¥120</span>
-              <span className="text-xs sm:text-sm text-white/70">/ 月</span>
+              <span className="text-2xl sm:text-3xl font-bold">¥40</span>
+              <span className="text-xs sm:text-sm text-white/70">/ 起</span>
             </div>
 
             <ul className="mt-4 space-y-2 text-xs sm:text-sm text-white/85">
@@ -74,9 +74,15 @@ const PricingSection: FC = () => {
               <li>• 适合临时项目 / 阶段性使用</li>
             </ul>
 
-            <button className="mt-6 w-full rounded-full bg-white/15 py-2.5 text-sm font-semibold text-white hover:bg-white/25">
-              使用成品账户
-            </button>
+            <a
+              href="https://fe.dtyuedan.cn/shop/2VDGQW4N/h4htfv"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 w-full rounded-full bg-white/15 py-2.5 text-sm font-semibold text-white hover:bg-white/25 text-center block"
+            >
+              购买成品 AI 账户
+            </a>
+
           </div>
 
           {/* 季度方案（推荐） */}
@@ -87,7 +93,7 @@ const PricingSection: FC = () => {
 
             <div className="mb-3 flex items-center justify-between">
               <h3 className="font-sans text-lg sm:text-xl font-semibold">
-                季度高性价比方案
+                月度稳定方案
               </h3>
               <span className="rounded-full bg-emerald-400/20 px-2 py-0.5 text-[11px] text-emerald-100">
                 热门选择
@@ -99,55 +105,71 @@ const PricingSection: FC = () => {
             </p>
 
             <div className="mt-6 flex items-baseline gap-1">
-              <span className="text-2xl sm:text-3xl font-bold">¥120</span>
-              <span className="text-xs sm:text-sm text-white/70">/ 3 个月</span>
+              <span className="text-2xl sm:text-3xl font-bold">¥168</span>
+              <span className="text-xs sm:text-sm text-white/70">/月</span>
             </div>
             <p className="mt-1 text-xs text-emerald-200/90">
-              平均 ¥XX / 月 · 比月付更划算
+              最推荐 · 稳定性最高
             </p>
 
             <ul className="mt-4 space-y-2 text-xs sm:text-sm text-white/90">
               <li>• 更优惠的整体价格，适合连续使用</li>
               <li>• 充值异常有专人协助处理</li>
               <li>• 支持按需续费 / 延长</li>
-              <li>• 可搭配其他 AI 会员组合使用</li>
+              <li>• 日常使用更省心、省时间</li>
+              <li>• 不需要重新登录/换号</li>
             </ul>
 
-            <button className="mt-6 w-full rounded-full bg-emerald-400 py-2.5 text-sm font-semibold text-black shadow-lg shadow-emerald-500/40 hover:bg-emerald-300">
-              立即选择（推荐）
-            </button>
-          </div>
+            <a
+              href="https://fe.dtyuedan.cn/item/wu0l29"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 w-full rounded-full bg-emerald-400 py-2.5 text-sm font-semibold text-black shadow-lg shadow-emerald-500/40 hover:bg-emerald-300 text-center block"
+            >
+             立即选择（推荐）
+            </a>
 
-          {/* 年度 / 自定义方案 */}
-          <div className="flex flex-col rounded-3xl border border-white/25 bg-black/45 p-6 sm:p-7 backdrop-blur-xl shadow-[0_0_40px_rgba(0,0,0,0.6)]">
-            <div className="mb-3 flex items-center justify-between">
-              <h3 className="font-sans text-lg sm:text-xl font-semibold">
-                年度 / 自定义方案
-              </h3>
-              <span className="rounded-full border border-white/25 px-2 py-0.5 text-[11px] text-white/80">
-                长期深度使用
-              </span>
             </div>
 
-            <p className="text-sm text-white/80">
-              适合深度创作者、团队使用，或需要长期稳定访问 ChatGPT Plus 及其他 AI
-              会员的用户，可根据需求单独沟通报价。
-            </p>
+           {/* 特殊 AI 账户 / 高阶定制方案 */}
+           <div className="flex flex-col rounded-3xl border border-white/25 bg-black/45 p-6 sm:p-7 backdrop-blur-xl shadow-[0_0_40px_rgba(0,0,0,0.6)]">
+           <div className="mb-3 flex items-center justify-between">
+            <h3 className="font-sans text-lg sm:text-xl font-semibold">
+              多平台高级 AI 账户 · 定制方案
+           </h3>
+           <span className="rounded-full border border-white/25 px-2 py-0.5 text-[11px] text-white/80">
+              高需求专用
+           </span>
+           </div>
 
-            <div className="mt-6 flex items-baseline gap-1">
-              <span className="text-2xl sm:text-3xl font-bold">¥联系咨询</span>
-            </div>
+           <p className="text-sm text-white/80">
+             适合深度创作者、开发者、团队使用者。可按需求开通 Grok、Claude、Cursor Pro、
+             Midjourney、Replit、Perplexity Pro 等多种 AI 平台，并提供一站式稳定续费。
+           </p>
 
-            <ul className="mt-4 space-y-2 text-xs sm:text-sm text-white/85">
-              <li>• 可按年、半年等形式灵活定制</li>
-              <li>• 支持组合多种 AI 会员账号</li>
-              <li>• 更适合企业 / 团队 / 重度使用者</li>
+           <div className="mt-6 flex items-baseline gap-1">
+           <span className="text-2xl sm:text-3xl font-bold">联系咨询</span>
+           </div>
+
+           <ul className="mt-4 space-y-2 text-xs sm:text-sm text-white/85">
+            <li>• 可按年、半年、季度等形式灵活定制</li>
+            <li>• 支持组合多平台顶级 AI 会员（Grok / Claude / Cursor / MJ）</li>
+            <li>• 适合企业团队、开发者、高频使用者</li>
+            <li>• 专属客服一对一分析需求并报价</li>
             </ul>
 
-            <button className="mt-6 w-full rounded-full bg白/15 py-2.5 text-sm font-semibold text-white hover:bg-white/25">
-              添加客服咨询详情
-            </button>
-          </div>
+          {/* 客服按钮（主推微信 chongzhiGPT + 一键复制） */}
+            <button
+             onClick={() => {
+             navigator.clipboard.writeText("chongzhiGPT");
+              alert("已复制微信号：chongzhiGPT");
+            }}
+             className="mt-6 w-full rounded-full bg-white/15 py-2.5 text-sm font-semibold text-white hover:bg-white/25 text-center"
+             >
+              添加客服咨询详情（微信：chongzhiGPT）
+             </button>
+            </div>
+
         </div>
 
         <p className="mt-4 text-center text-[11px] sm:text-xs text-white/75">

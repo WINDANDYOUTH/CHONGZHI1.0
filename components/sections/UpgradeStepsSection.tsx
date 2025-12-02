@@ -102,7 +102,7 @@ const UpgradeStepsSection: FC = () => {
                         <span className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-400 text-[11px] font-bold text-black">
                             ▶
                         </span>
-                        查看图文 + 视频教程
+                        查看视频教程
                     </button>
                     <p className="text-xs text-white/50">
                         第一次操作也不用担心，跟着教程一步一步来即可。
@@ -116,7 +116,7 @@ const UpgradeStepsSection: FC = () => {
                     <div className="w-full max-w-2xl rounded-2xl border border-white/15 bg-black/90 p-4 sm:p-6 shadow-[0_0_40px_rgba(0,0,0,0.8)]">
                         <div className="mb-4 flex items-center justify-between gap-3">
                             <h3 className="font-sans text-base sm:text-lg font-semibold text-white">
-                                会员升级图文 + 视频教程
+                                会员升级视频教程
                             </h3>
                             <button
                                 onClick={() => setShowVideo(false)}
@@ -139,7 +139,7 @@ const UpgradeStepsSection: FC = () => {
                         </div>
 
                         <p className="mt-3 text-[11px] sm:text-xs text-white/55">
-                            * 请将视频地址 <code>/videos/upgrade-tutorial.mp4</code> 替换为你的实际教程视频路径或嵌入代码。
+                           {/* 请将视频地址 <code>/videos/upgrade-tutorial.mp4</code> 替换为你的实际教程视频路径或嵌入代码。*/}
                         </p>
                     </div>
                 </div>
