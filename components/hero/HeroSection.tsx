@@ -70,7 +70,7 @@ export default function HeroSection() {
         {/* CTA 按钮（移动端加大 + 视觉强） */}
         <div className="mt-7 flex w-full max-w-sm flex-col items-stretch gap-3 sm:max-w-md sm:flex-row sm:gap-4">
         <a
-           href="https://fe.dtyuedan.cn/item/wu0l29"
+           href="https://qfcc99.com/item/wu0l29"
            target="_blank"
            rel="noopener noreferrer"
            className="w-full rounded-full bg-emerald-400 px-6 py-4 text-lg font-bold text-black shadow-lg shadow-emerald-400/40 transition hover:bg-emerald-300 sm:flex-1 text-center"
