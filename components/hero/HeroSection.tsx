@@ -78,7 +78,7 @@ export default function HeroSection() {
             立即升级会员
         </a>
         <a
-           href="https://fe.dtyuedan.cn/shop/2VDGQW4N/h4htfv"
+           href="https://qfcc99.com/item/wu0l29"
            target="_blank"
            rel="noopener noreferrer"
            className="w-full rounded-full border border-white/40 bg-black/40 px-6 py-4 text-lg font-semibold text-white/85 backdrop-blur-sm transition hover:bg-white/10 hover:border-white/50 sm:flex-1 text-center"
