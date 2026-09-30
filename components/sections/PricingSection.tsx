@@ -75,7 +75,7 @@ const PricingSection: FC = () => {
             </ul>
 
             <a
-              href="https://fe.dtyuedan.cn/shop/2VDGQW4N/h4htfv"
+              href="https://qfcc99.com/item/wu0l29"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 w-full rounded-full bg-white/15 py-2.5 text-sm font-semibold text-white hover:bg-white/25 text-center block"
