@@ -17,7 +17,7 @@ export default function MobileStickyCTA() {
                         </div>
 
                         <a
-                         href="https://fe.dtyuedan.cn/item/wu0l29"
+                         href="https://qfcc99.com/item/wu0l299"
                          target="_blank"
                          rel="noopener noreferrer"
                          className="shrink-0 rounded-full bg-emerald-400 px-4 py-2 text-xs font-semibold text-black shadow-md shadow-emerald-500/40 hover:bg-emerald-300 text-center"
