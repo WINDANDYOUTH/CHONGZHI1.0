@@ -1,5 +1,7 @@
 "use client";
 
+import { UPGRADE_URL } from "@/lib/links";
+
 export default function MobileStickyCTA() {
     return (
         <div className="fixed inset-x-0 bottom-0 z-30 md:hidden">
@@ -17,7 +19,7 @@ export default function MobileStickyCTA() {
                         </div>
 
                         <a
-                         href="https://qfcc99.com/item/wu0l299"
+                         href={UPGRADE_URL}
                          target="_blank"
                          rel="noopener noreferrer"
                          className="shrink-0 rounded-full bg-emerald-400 px-4 py-2 text-xs font-semibold text-black shadow-md shadow-emerald-500/40 hover:bg-emerald-300 text-center"

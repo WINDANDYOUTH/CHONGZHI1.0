@@ -2,6 +2,7 @@
 
 import type { FC } from "react";
 import ColorBends from "@/components/ColorBends"; // 按你的真实路径调整
+import { UPGRADE_URL } from "@/lib/links";
 
 const PricingSection: FC = () => {
   return (
@@ -121,7 +122,7 @@ const PricingSection: FC = () => {
             </ul>
 
             <a
-              href="https://fe.dtyuedan.cn/item/wu0l29"
+              href={UPGRADE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 w-full rounded-full bg-emerald-400 py-2.5 text-sm font-semibold text-black shadow-lg shadow-emerald-500/40 hover:bg-emerald-300 text-center block"

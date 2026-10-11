@@ -1,3 +1,5 @@
+import { UPGRADE_URL } from "@/lib/links";
+
 export type NavLink = {
   label: string;
   href: string;
@@ -46,7 +48,7 @@ export const heroContent = {
   description:
     "50000+ 用户信赖，ChatGPT Plus / Gemini / Claude / Grok 代充服务。极速自动发货，支持微信与支付宝。",
   actions: [
-    { label: "立即升级 Plus", href: "#products", variant: "primary" as const },
+    { label: "立即升级 Plus", href: UPGRADE_URL, variant: "primary" as const },
     { label: "咨询客服", href: "#support", variant: "ghost" as const },
   ],
   stats: [
